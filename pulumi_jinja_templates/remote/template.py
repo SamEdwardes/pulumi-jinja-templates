@@ -14,6 +14,6 @@ class Template(TemplateBase):
         return remote.Command(
             resource_name=self.resource_name,
             connection=self.connection,
-            create=pulumi.Output.concat('echo "', self.template, f'" > {self.path_out}')
+            create=pulumi.Output.concat('echo "', self.template, f'" > {self.path_out}'),
             delete=f"rm {self.path_out}"
         )
