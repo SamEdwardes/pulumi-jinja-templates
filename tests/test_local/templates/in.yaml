@@ -1,1 +1,7 @@
 home-directory: {{ home_dir }}
+user-name: {{ user }}
+home-dir: {{ home_dir }}
+xxx: "sam"
+one-more: 1
+another-user: {{ user }}
+user-more: {{ user }}
