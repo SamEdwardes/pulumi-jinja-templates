@@ -1,0 +1,27 @@
+---
+title: "pulumi-jinja-templates"
+---
+
+Easily render templates with Pulumi using Jinja2.
+
+```python
+from pulumi_jinja_templates import render_template
+from pulumi_command import local
+
+home_directory = local.Command(
+    'get home directory',
+    create="echo $HOME"
+)
+
+user_name = local.Command(
+    'get user name',
+    create="echo $USER"
+)
+
+template = render_template(
+    "./template_in.yaml"
+    home_dir=home_directory.stdout
+    name=user_name.stdout
+)
+
+```

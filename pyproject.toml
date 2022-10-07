@@ -9,7 +9,13 @@ packages = [{include = "pulumi_jinja_templates"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+Jinja2 = "^3.1.2"
+pulumi-command = "^0.5.2"
+pulumi = "^3.42.0"
 
+
+[tool.poetry.group.dev.dependencies]
+rich = "^12.6.0"
 
 [build-system]
 requires = ["poetry-core"]

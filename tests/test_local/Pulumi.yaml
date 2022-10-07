@@ -1,0 +1,6 @@
+name: local-test
+runtime:
+  name: python
+  options:
+    virtualenv: ../../.venv
+description: Test that template rendering works locally
