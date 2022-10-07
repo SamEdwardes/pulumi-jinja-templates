@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pulumi-jinja-templates"
+version = "0.1.0"
+description = "Render Jinja2 templates with Pulumi"
+authors = ["SamEdwardes <edwardes.s@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pulumi_jinja_templates"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
